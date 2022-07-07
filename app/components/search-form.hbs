@@ -1,0 +1,14 @@
+<div class="form-search">
+    <img class="mb-4" src="https://raw.githubusercontent.com/Jatinchhabra21/Movie-search-gui-using-python/main/search.ico" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Search</h1>
+    <input type="search" id="title" class="form-control" placeholder="Movie/Series" name="title" required autofocus>
+    <div class="radio mb-3" style="margin-top:10px;">
+        <label>
+            <input type="radio" id="movie" name="type" value="movie"> Movie
+        </label>
+        <label>
+            <input type="radio" id="series" name="type" value="series"> Series
+        </label>
+    </div>
+    <button class="btn btn-primary" type="submit" {{on "click" this.updateSearchFields}}>Search</button>
+</div>
